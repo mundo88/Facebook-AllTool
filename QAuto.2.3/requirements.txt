@@ -1,0 +1,8 @@
+PyQt5
+requests
+lxml
+bs4
+selenium
+pypiwin32
+patool
+pyunpack

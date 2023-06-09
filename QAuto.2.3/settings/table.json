@@ -1,0 +1,11 @@
+{
+    "stt": true,
+    "name": true,
+    "uid": true,
+    "pass": false,
+    "2fa": false,
+    "cookie": false,
+    "comment": true,
+    "img": false,
+    "status": true
+}

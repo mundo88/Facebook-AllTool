@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>755</width>
+    <height>533</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Comment</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QPlainTextEdit" name="plainTextEdit">
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    QPlainTextEdit {
+        background-color: rgb(249, 249, 249);
+        border-radius: 5px;
+        color: rgb(71, 75, 78);
+        border: 2px solid rgb(150, 150, 150);
+        padding: 10px;
+    }
+    QPlainTextEdit:hover {
+          border: 2px solid rgb(138, 180, 248);
+    }
+    QPlainTextEdit:focus {
+         border: 2px solid  rgb(138, 180, 248);
+    }
+    QScrollBar:horizontal {
+        border: none;
+        background:  rgb(231, 234, 237);
+        height: 14px;
+        margin: 0px 21px 0 21px;
+        border-radius: 0px;
+    }
+
+    QScrollBar::handle:horizontal {
+        background: rgb(85, 170, 255);
+        min-width: 25px;
+        border-radius: 7px
+    }
+    QScrollBar::add-line:horizontal {
+        border: none;
+        background: rgb(231, 234, 237) ;
+        width: 20px;
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+        subcontrol-position: right;
+        subcontrol-origin: margin;
+    }
+    QScrollBar::sub-line:horizontal {
+        border: none;
+        background: rgb(231, 234, 237);
+        width: 20px;
+        border-top-left-radius: 7px;
+        border-bottom-left-radius: 7px;
+        subcontrol-position: left;
+        subcontrol-origin: margin;
+    }
+    QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal
+    {
+         background: none;
+    }
+    QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal
+    {
+         background: none;
+    }
+     QScrollBar:vertical {
+        border: none;
+        background:  rgb(231, 234, 237);
+        width: 14px;
+        margin: 21px 0 21px 0;
+        border-radius: 0px;
+     }
+     QScrollBar::handle:vertical {  
+        background: rgb(85, 170, 255);
+        min-height: 25px;
+        border-radius: 7px
+     }
+     QScrollBar::add-line:vertical {
+         border: none;
+        background:  rgb(231, 234, 237);
+         height: 20px;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+         subcontrol-position: bottom;
+         subcontrol-origin: margin;
+     }
+     QScrollBar::sub-line:vertical {
+        border: none;
+        background:  rgb(231, 234, 237);
+        height: 20px;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        subcontrol-position: top;
+        subcontrol-origin: margin;
+     }
+     QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+        background: none;
+     }
+
+     QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+        background: none;
+     }</string>
+     </property>
+     <property name="lineWrapMode">
+      <enum>QPlainTextEdit::NoWrap</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="pushButton_cmt">
+        <property name="minimumSize">
+         <size>
+          <width>150</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>50000</width>
+          <height>300</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>15</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	
+	color : rgb(255,255,255);
+	border:none;
+	background-color: rgb(75, 104, 133);
+}
+QPushButton:hover {
+	background-color: rgb(57, 65, 80);
+	border: 2px solid rgb(61, 70, 86);
+
+}
+QPushButton:pressed {	
+	background-color: rgb(35, 40, 49);
+	border: 2px solid rgb(43, 50, 61);
+	padding-right:3px;
+}</string>
+        </property>
+        <property name="text">
+         <string>Nhập comment</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string>Ctrl+B</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_cmt_2">
+        <property name="minimumSize">
+         <size>
+          <width>150</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>50000</width>
+          <height>300</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>15</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	
+	color : rgb(255,255,255);
+	border:none;
+	background-color: rgb(75, 104, 133);
+}
+QPushButton:hover {
+	background-color: rgb(57, 65, 80);
+	border: 2px solid rgb(61, 70, 86);
+
+}
+QPushButton:pressed {	
+	background-color: rgb(35, 40, 49);
+	border: 2px solid rgb(43, 50, 61);
+	padding-right:3px;
+}</string>
+        </property>
+        <property name="text">
+         <string>Xáo trộn cmt</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
